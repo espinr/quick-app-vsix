@@ -1,0 +1,728 @@
+{
+  "list": [
+    {
+      "name": "service.account",
+      "methods": [
+        {
+          "name": "getProfile",
+          "mode": 1
+        },
+        {
+          "name": "authorize",
+          "mode": 1
+        },
+        {
+          "name": "getProvider",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "service.alipay",
+      "methods": [
+        {
+          "name": "pay",
+          "mode": 1
+        },
+        {
+          "name": "getType",
+          "mode": 0
+        },
+        {
+          "name": "getVersion",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "service.pay",
+      "methods": [
+        {
+          "name": "pay",
+          "mode": 1
+        },
+        {
+          "name": "getProvider",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "service.push",
+      "methods": [
+        {
+          "name": "unsubscribe",
+          "mode": 1
+        },
+        {
+          "name": "on",
+          "mode": 2
+        },
+        {
+          "name": "getProvider",
+          "mode": 0
+        },
+        {
+          "name": "off",
+          "mode": 0
+        },
+        {
+          "name": "subscribe",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "service.share",
+      "methods": [
+        {
+          "name": "share",
+          "mode": 1
+        },
+        {
+          "name": "getProvider",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "service.stats",
+      "methods": [
+        {
+          "name": "recordCalculateEvent",
+          "mode": 1
+        },
+        {
+          "name": "recordCountEvent",
+          "mode": 1
+        },
+        {
+          "name": "getProvider",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "service.wxpay",
+      "methods": [
+        {
+          "name": "pay",
+          "mode": 1
+        },
+        {
+          "name": "getType",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.audio",
+      "methods": [
+        {
+          "name": "__ontimeupdate",
+          "mode": 2,
+          "type": 2,
+          "alias": "ontimeupdate"
+        },
+        {
+          "name": "__setAutoplay",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "autoplay"
+        },
+        {
+          "name": "__ondurationchange",
+          "mode": 2,
+          "type": 2,
+          "alias": "ondurationchange"
+        },
+        {
+          "name": "__getVolume",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "volume"
+        },
+        {
+          "name": "__getLoop",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "loop"
+        },
+        {
+          "name": "__getSrc",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "src"
+        },
+        {
+          "name": "play",
+          "mode": 1
+        },
+        {
+          "name": "__onpause",
+          "mode": 2,
+          "type": 2,
+          "alias": "onpause"
+        },
+        {
+          "name": "__onended",
+          "mode": 2,
+          "type": 2,
+          "alias": "onended"
+        },
+        {
+          "name": "__onerror",
+          "mode": 2,
+          "type": 2,
+          "alias": "onerror"
+        },
+        {
+          "name": "__getMuted",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "muted"
+        },
+        {
+          "name": "__setMuted",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "muted"
+        },
+        {
+          "name": "__setLoop",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "loop"
+        },
+        {
+          "name": "__onplay",
+          "mode": 2,
+          "type": 2,
+          "alias": "onplay"
+        },
+        {
+          "name": "__setVolume",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "volume"
+        },
+        {
+          "name": "__setSrc",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "src"
+        },
+        {
+          "name": "__setCurrentTime",
+          "mode": 0,
+          "type": 1,
+          "access": 2,
+          "alias": "currentTime"
+        },
+        {
+          "name": "__getDuration",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "duration"
+        },
+        {
+          "name": "__getCurrentTime",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "currentTime"
+        },
+        {
+          "name": "__onloadeddata",
+          "mode": 2,
+          "type": 2,
+          "alias": "onloadeddata"
+        },
+        {
+          "name": "pause",
+          "mode": 1
+        },
+        {
+          "name": "__getAutoplay",
+          "mode": 0,
+          "type": 1,
+          "access": 1,
+          "alias": "autoplay"
+        }
+      ]
+    },
+    {
+      "name": "system.barcode",
+      "methods": [
+        {
+          "name": "scan",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.battery",
+      "methods": [
+        {
+          "name": "getStatus",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.brightness",
+      "methods": [
+        {
+          "name": "setValue",
+          "mode": 1
+        },
+        {
+          "name": "setMode",
+          "mode": 1
+        },
+        {
+          "name": "getMode",
+          "mode": 1
+        },
+        {
+          "name": "getValue",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.calendar",
+      "methods": [
+        {
+          "name": "insert",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.clipboard",
+      "methods": [
+        {
+          "name": "get",
+          "mode": 1
+        },
+        {
+          "name": "set",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.device",
+      "methods": [
+        {
+          "name": "getAdvertisingId",
+          "mode": 1
+        },
+        {
+          "name": "getUserId",
+          "mode": 1
+        },
+        {
+          "name": "getCpuInfo",
+          "mode": 1
+        },
+        {
+          "name": "getAvailableStorage",
+          "mode": 1
+        },
+        {
+          "name": "getId",
+          "mode": 1
+        },
+        {
+          "name": "getTotalStorage",
+          "mode": 1
+        },
+        {
+          "name": "getDeviceId",
+          "mode": 1
+        },
+        {
+          "name": "getInfo",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.fetch",
+      "methods": [
+        {
+          "name": "fetch",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.file",
+      "methods": [
+        {
+          "name": "get",
+          "mode": 1
+        },
+        {
+          "name": "move",
+          "mode": 1
+        },
+        {
+          "name": "list",
+          "mode": 1
+        },
+        {
+          "name": "delete",
+          "mode": 1
+        },
+        {
+          "name": "copy",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.geolocation",
+      "methods": [
+        {
+          "name": "getLocation",
+          "mode": 1
+        },
+        {
+          "name": "unsubscribe",
+          "mode": 0
+        },
+        {
+          "name": "subscribe",
+          "mode": 2
+        }
+      ]
+    },
+    {
+      "name": "system.image",
+      "methods": [
+        {
+          "name": "editImage",
+          "mode": 1
+        },
+        {
+          "name": "compressImage",
+          "mode": 1
+        },
+        {
+          "name": "edit",
+          "mode": 1
+        },
+        {
+          "name": "getImageInfo",
+          "mode": 1
+        },
+        {
+          "name": "compress",
+          "mode": 1
+        },
+        {
+          "name": "getInfo",
+          "mode": 1
+        },
+        {
+          "name": "applyOperations",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.media",
+      "methods": [
+        {
+          "name": "takeVideo",
+          "mode": 1
+        },
+        {
+          "name": "pickVideo",
+          "mode": 1
+        },
+        {
+          "name": "pickImage",
+          "mode": 1
+        },
+        {
+          "name": "takePhoto",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.network",
+      "methods": [
+        {
+          "name": "getType",
+          "mode": 1
+        },
+        {
+          "name": "unsubscribe",
+          "mode": 0
+        },
+        {
+          "name": "subscribe",
+          "mode": 2
+        }
+      ]
+    },
+    {
+      "name": "system.notification",
+      "methods": [
+        {
+          "name": "show",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.package",
+      "methods": [
+        {
+          "name": "install",
+          "mode": 1
+        },
+        {
+          "name": "hasInstalled",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.prompt",
+      "methods": [
+        {
+          "name": "showDialog",
+          "mode": 1
+        },
+        {
+          "name": "showToast",
+          "mode": 0
+        },
+        {
+          "name": "showContextMenu",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.record",
+      "methods": [
+        {
+          "name": "start",
+          "mode": 1
+        },
+        {
+          "name": "stop",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.request",
+      "methods": [
+        {
+          "name": "onDownloadComplete",
+          "mode": 1
+        },
+        {
+          "name": "download",
+          "mode": 1
+        },
+        {
+          "name": "upload",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.sensor",
+      "methods": [
+        {
+          "name": "unsubscribeLight",
+          "mode": 0
+        },
+        {
+          "name": "subscribeCompass",
+          "mode": 2
+        },
+        {
+          "name": "subscribeAccelerometer",
+          "mode": 2
+        },
+        {
+          "name": "subscribeLight",
+          "mode": 2
+        },
+        {
+          "name": "unsubscribeProximity",
+          "mode": 0
+        },
+        {
+          "name": "unsubscribeCompass",
+          "mode": 0
+        },
+        {
+          "name": "subscribeProximity",
+          "mode": 2
+        },
+        {
+          "name": "unsubscribeAccelerometer",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.share",
+      "methods": [
+        {
+          "name": "share",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.shortcut",
+      "methods": [
+        {
+          "name": "install",
+          "mode": 1
+        },
+        {
+          "name": "hasInstalled",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.storage",
+      "methods": [
+        {
+          "name": "get",
+          "mode": 1
+        },
+        {
+          "name": "delete",
+          "mode": 1
+        },
+        {
+          "name": "clear",
+          "mode": 1
+        },
+        {
+          "name": "set",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.vibrator",
+      "methods": [
+        {
+          "name": "vibrate",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.volume",
+      "methods": [
+        {
+          "name": "getMediaValue",
+          "mode": 1
+        },
+        {
+          "name": "setMediaValue",
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "system.webview",
+      "methods": [
+        {
+          "name": "loadUrl",
+          "mode": 0
+        }
+      ]
+    }
+  ],
+  "builtin": [
+    {
+      "name": "system.model",
+      "methods": [
+        {
+          "name": "getComputedAttr",
+          "mode": 0
+        },
+        {
+          "name": "getComputedStyle",
+          "mode": 0
+        },
+        {
+          "name": "getBoundingRect",
+          "mode": 0
+        },
+        {
+          "name": "getComponent",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.app",
+      "methods": [
+        {
+          "name": "getInfo",
+          "mode": 0
+        }
+      ]
+    },
+    {
+      "name": "system.router",
+      "methods": [
+        {
+          "name": "back",
+          "mode": 0
+        },
+        {
+          "name": "push",
+          "mode": 0
+        },
+        {
+          "name": "replace",
+          "mode": 0
+        },
+        {
+          "name": "clear",
+          "mode": 0
+        },
+        {
+          "name": "getLength",
+          "mode": 0
+        },
+        {
+          "name": "getState",
+          "mode": 0
+        }
+      ]
+    }
+  ],
+  "hash": {},
+  "nameTree": {}
+}

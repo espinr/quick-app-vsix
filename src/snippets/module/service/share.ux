@@ -1,0 +1,18 @@
+<script prefix="h-service.share.share" description="API:service.share.share">
+share.share({
+  shareType: 0,
+  title: '${1:title}',
+  summary: '${2:summary}',
+  imagePath: '${3:xxx/xxx/xxx/share.jpg}',
+  targetUrl: '${4:http://www.example.com}',
+  success: function (data) {
+    console.info('success')
+  },
+  fail: function (data, code) {
+    console.info(`fail`)
+  },
+  cancel: function () {
+    console.info('cancel')
+  }
+})
+</script>

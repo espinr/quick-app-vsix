@@ -1,0 +1,28 @@
+<script prefix="h-device.getInfo" description="API:device.getInfo">
+device.getInfo({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-device.getId" description="API:device.getId">
+device.getId({
+  type: ['device', 'mac'],
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

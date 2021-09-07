@@ -1,0 +1,27 @@
+<script prefix="h-shortcut.hasInstalled" description="API:shortcut.hasInstalled">
+shortcut.hasInstalled({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-shortcut.install" description="API:shortcut.install">
+shortcut.install({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

@@ -1,0 +1,18 @@
+<script prefix="h-calendar.insert" description="API:calendar.insert">
+calendar.insert({
+  title: '${1:title}',
+  description: '${2:description}',
+  startDate: '${3:1490770543000}',
+  endDate: '${4:1490880543000}',
+  remindMinutes: [5, 15, 30],
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

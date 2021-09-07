@@ -1,0 +1,18 @@
+<script prefix="h-system.share.share" description="API:system.share.share">
+share.share({
+  type: '${1:text/html}',
+  data: '${2:<b>bold</b>}',
+  success: function (data) {
+    console.info('success')
+  },
+  fail: function (data, code) {
+    console.info(`fail`)
+  },
+  cancel: function (data) {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

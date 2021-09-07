@@ -1,0 +1,49 @@
+<script prefix="h-request.upload" description="API:request.upload">
+request.upload({
+  url: '${1:http://www.example.com}',
+  files: [{
+    uri: '${2:internal://xxx/xxx/test.png}',
+    name: '${3:file}',
+    filename: '${4:test.png}'
+  }],
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-request.download" description="API:request.download">
+request.download({
+  url: '${1:http://www.example.com}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-request.onDownloadComplete" description="API:request.onDownloadComplete">
+request.onDownloadComplete({
+  token: '${1:Token-returned-by-download-interface}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

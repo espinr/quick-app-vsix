@@ -1,0 +1,77 @@
+<template prefix="h-import" description="Tag:import">
+<import name="$1" src="$2"></import>
+</template>
+||
+<template prefix="h-template" description="Tag:template">
+<template>$1</template>
+</template>
+||
+<template prefix="h-style" description="Tag:style">
+<style>$1</style>
+</template>
+||
+<template prefix="h-script" description="Tag:script">
+<script>$1</script>
+</template>
+||
+<template prefix="h-app" description="Template:app">
+<template>
+  $1
+</template>
+
+<style>
+  $2
+</style>
+
+<script>
+  export default {
+    data: {$3},
+    onCreate () {
+      console.info(`Called when the app is created`)
+    },
+    onDestroy () {
+      console.info(`Triggered when the app is destroyed`)
+    }
+  }
+</script>
+</template>
+||
+<template prefix="h-page" description="Template:page">
+<template>
+  $1
+</template>
+
+<style>
+  $2
+</style>
+
+<script>
+  export default {
+    data: {$3},
+    onInit () {
+      console.info(`Called when the page is initialized, only triggered once`)
+    },
+    onReady () {
+      console.info(`Triggered when the page is created and displayed only once`)
+    },
+    onShow () {
+      console.info(`Triggered when entering the page`)
+    },
+    onHide () {
+      console.info(`Triggered when the page is hidden`)
+    },
+    onDestroy () {
+      console.info(`Triggered when the page is destroyed (does not enter the navigation stack)`)
+    },
+    onBackPress () {
+      console.info(`Triggered when the user clicks the back button`)
+    },
+    onMenuPress () {
+      console.info(`Triggered when the user clicks the menu button`)
+    },
+    onOrientationChange () {
+      console.info(`Triggered when the user rotates the device vertically or horizontally, and the screen orientation changes`)
+    }
+  }
+</script>
+</template>

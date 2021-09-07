@@ -1,0 +1,41 @@
+<script prefix="h-prompt.showToast" description="API:prompt.showToast">
+prompt.showToast({
+  message: '${1:message}'
+})
+</script>
+||
+<script prefix="h-prompt.showDialog" description="API:prompt.showDialog">
+prompt.showDialog({
+  title: '${1:title}',
+  message: '${2:message}',
+  buttons: [{
+    text: '${3:btn}',
+    color: '${4:#FF0000}'
+  }],
+  success: function (data) {
+    console.info('success')
+  },
+  cancel: function (data) {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-prompt.showContextMenu" description="API:prompt.showContextMenu">
+prompt.showContextMenu({
+  itemList: ['${1:buttonText1}'],
+  itemColor: ['${2:#FF0000}'],
+  success: function (data) {
+    console.info('success')
+  },
+  cancel: function (data) {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

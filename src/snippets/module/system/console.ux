@@ -1,0 +1,19 @@
+<script prefix="h-console.debug" description="API:console.debug">
+console.debug(`$1`)
+</script>
+||
+<script prefix="h-console.log" description="API:console.log">
+console.log(`$1`)
+</script>
+||
+<script prefix="h-console.info" description="API:console.info">
+console.info(`$1`)
+</script>
+||
+<script prefix="h-console.warn" description="API:console.warn">
+console.warn(`$1`)
+</script>
+||
+<script prefix="h-console.error" description="API:console.error">
+console.error(`$1`)
+</script>

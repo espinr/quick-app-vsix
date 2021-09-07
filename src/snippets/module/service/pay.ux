@@ -1,0 +1,14 @@
+<script prefix="h-pay.pay" description="API:pay.pay">
+pay.pay({
+  orderInfo: '${1:orderInfo}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

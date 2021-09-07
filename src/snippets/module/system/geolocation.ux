@@ -1,0 +1,28 @@
+<script prefix="h-geolocation.getLocation" description="API:geolocation.getLocation">
+geolocation.getLocation({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-geolocation.subscribe" description="API:geolocation.subscribe">
+geolocation.subscribe({
+  callback: function (data) {
+    console.info('callback');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  }
+})
+</script>
+||
+<script prefix="h-geolocation.unsubscribe" description="API:geolocation.unsubscribe">
+geolocation.unsubscribe()
+</script>

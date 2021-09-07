@@ -1,0 +1,14 @@
+<script prefix="h-fetch.fetch" description="API:fetch.fetch">
+fetch.fetch({
+  url:'${1:http://www.example.com}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

@@ -1,0 +1,39 @@
+<script prefix="h-push.subscribe" description="API:push.subscribe">
+push.subscribe({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-push.unsubscribe" description="API:push.unsubscribe">
+push.unsubscribe({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-push.on" description="API:push.on">
+push.on({
+  callback: function () {
+    console.info('callback')
+  }
+})
+</script>
+||
+<script prefix="h-push.off" description="API:push.off">
+push.off()
+</script>

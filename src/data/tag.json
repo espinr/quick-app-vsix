@@ -1,0 +1,496 @@
+{
+  "tagCommon": {
+    "events": [
+      "click",
+      "focus",
+      "blur",
+      "longpress",
+      "appear",
+      "disappear",
+      "swipe"
+    ],
+    "attrs": {
+      "id": {},
+      "style": {},
+      "class": {},
+      "disabled": {
+        "enum": [
+          "false",
+          "true"
+        ]
+      },
+      "if": {
+        "def": "true"
+      },
+      "elif": {
+        "def": "true"
+      },
+      "else": {},
+      "for": {},
+      "tid": {},
+      "show": {
+        "def": "true"
+      }
+    },
+    "children": [
+      "block",
+      "slot"
+    ],
+    "parents": [
+      "block"
+    ]
+  },
+  "tagNatives": {
+    "div": {},
+    "a": {
+      "textContent": true,
+      "children": [
+        "span"
+      ],
+      "attrs": {
+        "visited": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        },
+        "href": {}
+      }
+    },
+    "text": {
+      "textContent": true,
+      "children": [
+        "a",
+        "span"
+      ],
+      "attrs": {
+        "type": {
+          "enum": [
+            "text",
+            "html"
+          ]
+        }
+      }
+    },
+    "span": {
+      "textContent": true,
+      "atomic": true,
+      "excludeRoot": true,
+      "parents": [
+        "text",
+        "a"
+      ],
+      "attrs": {
+        "extendCommon": false,
+        "id": {},
+        "style": {},
+        "class": {},
+        "for": {},
+        "tid": {},
+        "if": {
+          "def": "true"
+        },
+        "elif": {
+          "def": "true"
+        },
+        "else": {}
+      }
+    },
+    "label": {
+      "textContent": true,
+      "atomic": true,
+      "attrs": {
+        "target": {}
+      }
+    },
+    "image": {
+      "alias": [
+        "img"
+      ],
+      "atomic": true,
+      "attrs": {
+        "src": {},
+        "alt": {}
+      }
+    },
+    "slider": {
+      "selfClosing": true,
+      "atomic": true,
+      "attrs": {
+        "enabled": {
+          "enum": [
+            "true",
+            "false"
+          ]
+        },
+        "min": {
+          "def": 0
+        },
+        "max": {
+          "def": 100
+        },
+        "step": {
+          "def": 1
+        },
+        "value": {
+          "def": 0
+        }
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "web": {
+      "atomic": true,
+      "events": [
+        "pagestart",
+        "pagefinish",
+        "titlereceive",
+        "error"
+      ],
+      "attrs": {
+        "src": {}
+      }
+    },
+    "list": {
+      "children": [
+        "list-item"
+      ],
+      "attrs": {
+        "scrollpage": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        }
+      },
+      "events": [
+        "scroll",
+        "scrollbottom",
+        "scrolltop"
+      ]
+    },
+    "list-item": {
+      "excludeRoot": true,
+      "parents": [
+        "list"
+      ],
+      "attrs": {
+        "type": {
+          "required": true
+        }
+      }
+    },
+    "block": {
+      "excludeRoot": true,
+      "attrs": {
+        "extendCommon": false,
+        "for": {},
+        "tid": {},
+        "if": {
+          "def": "true"
+        },
+        "elif": {
+          "def": "true"
+        },
+        "else": {}
+      }
+    },
+    "slot": {
+      "selfClosing": true,
+      "atomic": true,
+      "excludeRoot": true,
+      "attrs": {
+        "extendCommon": false,
+        "content": {}
+      }
+    },
+    "input": {
+      "atomic": true,
+      "attrs": {
+        "type": {
+          "enum": [
+            "text",
+            "button",
+            "checkbox",
+            "radio",
+            "email",
+            "date",
+            "time",
+            "number",
+            "password"
+          ]
+        },
+        "checked": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        },
+        "name": {},
+        "value": {},
+        "placeholder": {}
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "button": {
+      "textContent": true,
+      "atomic": true
+    },
+    "refresh": {
+      "attrs": {
+        "offset": {
+          "def": "132px"
+        },
+        "refreshing": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        }
+      },
+      "events": [
+        "refresh"
+      ]
+    },
+    "swiper": {
+      "attrs": {
+        "index": {
+          "def": 0
+        },
+        "autoplay": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        },
+        "interval": {
+          "def": 3000
+        },
+        "indicator": {
+          "enum": [
+            "true",
+            "false"
+          ]
+        }
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "progress": {
+      "selfClosing": true,
+      "atomic": true,
+      "attrs": {
+        "percent": {
+          "def": 0
+        },
+        "type": {
+          "enum": [
+            "horizontal",
+            "circular"
+          ]
+        }
+      }
+    },
+    "picker": {
+      "selfClosing": true,
+      "atomic": true,
+      "attrs": {
+        "type": {
+          "required": true,
+          "enum": [
+            "text",
+            "date",
+            "time"
+          ]
+        },
+        "start": {
+          "def": "1970-1-1"
+        },
+        "end": {
+          "def": "2100-12-31"
+        },
+        "range": {},
+        "selected": {},
+        "value": {}
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "switch": {
+      "selfClosing": true,
+      "atomic": true,
+      "attrs": {
+        "checked": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        }
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "textarea": {
+      "atomic": true,
+      "textContent": true,
+      "attrs": {
+        "placeholder": {}
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "video": {
+      "atomic": true,
+      "attrs": {
+        "src": {},
+        "autoplay": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        },
+        "poster": {}
+      },
+      "events": [
+        "prepared",
+        "start",
+        "pause",
+        "finish",
+        "error",
+        "seeking",
+        "seeked",
+        "timeupdate",
+        "fullscreenchange"
+      ]
+    },
+    "map": {
+      "atomic": true
+    },
+    "canvas": {
+      "atomic": true
+    },
+    "stack": {},
+    "richtext": {
+      "textContent": true,
+      "atomic": true,
+      "attrs": {
+        "type": {
+          "enum": [
+            "html"
+          ]
+        }
+      }
+    },
+    "tabs": {
+      "children": [
+        "tab-bar",
+        "tab-content"
+      ],
+      "attrs": {
+        "index": {
+          "def": 0
+        }
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "tab-content": {
+      "parents": [
+        "tabs"
+      ]
+    },
+    "tab-bar": {
+      "parents": [
+        "tabs"
+      ],
+      "attrs": {
+        "mode": {
+          "enum": [
+            "fixed",
+            "scrollable"
+          ]
+        }
+      }
+    },
+    "popup": {
+      "children": [
+        "text"
+      ],
+      "attrs": {
+        "target": {
+          "required": true
+        },
+        "placement": {
+          "enum": [
+            "left",
+            "top",
+            "right",
+            "bottom",
+            "topLeft",
+            "topRight",
+            "bottomLeft",
+            "bottomRight"
+          ],
+          "def": "bottom"
+        }
+      },
+      "events": [
+        "visibilitychange"
+      ]
+    },
+    "rating": {
+      "atomic": true,
+      "attrs": {
+        "numstars": {
+          "def": "5"
+        },
+        "rating": {
+          "def": "0"
+        },
+        "stepsize": {
+          "def": "0.5"
+        },
+        "indicator": {
+          "enum": [
+            "false",
+            "true"
+          ]
+        }
+      },
+      "events": [
+        "change"
+      ]
+    },
+    "select": {
+      "children": [
+        "option"
+      ],
+      "events": [
+        "change"
+      ],
+      "excludeRoot": true
+    },
+    "option": {
+      "parents": [
+        "select"
+      ],
+      "atomic": true,
+      "textContent": true,
+      "attrs": {
+        "selected": {
+          "def": false
+        },
+        "value": {}
+      },
+      "excludeRoot": true
+    }
+  }
+}

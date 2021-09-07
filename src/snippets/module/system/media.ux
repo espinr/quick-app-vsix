@@ -1,0 +1,67 @@
+<script prefix="h-media.takePhoto" description="API:media.takePhoto">
+media.takePhoto({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-media.takeVideo" description="API:media.takeVideo">
+media.takeVideo({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-media.pickImage" description="API:media.pickImage">
+media.pickImage({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-media.pickVideo" description="API:media.pickVideo">
+media.pickVideo({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel')
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

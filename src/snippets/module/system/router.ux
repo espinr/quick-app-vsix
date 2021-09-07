@@ -1,0 +1,29 @@
+<script prefix="h-router.push" description="API:router.push">
+router.push({
+  uri: '$1',
+  params: {$1}
+})
+</script>
+||
+<script prefix="h-router.replace" description="API:router.replace">
+router.replace({
+  uri: '$1',
+  params: {$1}
+})
+</script>
+||
+<script prefix="h-router.back" description="API:router.back">
+router.back()
+</script>
+||
+<script prefix="h-router.clear" description="API:router.clear">
+router.clear()
+</script>
+||
+<script prefix="h-router.getLength" description="API:router.getLength">
+router.getLength()
+</script>
+||
+<script prefix="h-router.getState" description="API:router.getState">
+({index, name, path} = router.getState())
+</script>

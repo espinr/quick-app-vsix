@@ -1,0 +1,59 @@
+<script prefix="h-storage.get" description="API:storage.get">
+storage.get({
+  key: '${1:key}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-storage.set" description="API:storage.set">
+storage.set({
+  key: '${1:key}',
+  value: '${2:value}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-storage.clear" description="API:storage.clear">
+storage.clear({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-storage.delete" description="API:storage.delete">
+storage.delete({
+  key: '${1:key}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

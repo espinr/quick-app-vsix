@@ -1,0 +1,8 @@
+<script prefix="h-alipay.pay" description="API:alipay.pay">
+alipay.pay({
+  orderInfo: '${1:orderInfo}',
+  callback: function (data) {
+    console.info('callback')
+  }
+})
+</script>

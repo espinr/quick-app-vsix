@@ -1,0 +1,23 @@
+<script prefix="h-sensor.subscribeAccelerometer" description="API:sensor.subscribeAccelerometer">
+sensor.subscribeAccelerometer({
+  callback: function (data) {
+    console.info('callback');
+  }
+})
+</script>
+||
+<script prefix="h-sensor.unsubscribeAccelerometer" description="API:sensor.unsubscribeAccelerometer">
+sensor.unsubscribeAccelerometer()
+</script>
+||
+<script prefix="h-sensor.subscribeCompass" description="API:sensor.subscribeCompass">
+sensor.subscribeCompass({
+  callback: function (data) {
+    console.info('callback');
+  }
+})
+</script>
+||
+<script prefix="h-sensor.unsubscribeCompass" description="API:sensor.unsubscribeCompass">
+sensor.unsubscribeCompass()
+</script>

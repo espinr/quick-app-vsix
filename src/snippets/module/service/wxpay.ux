@@ -1,0 +1,19 @@
+<script prefix="h-wxpay.getType" description="API:wxpay.getType">
+wxpay.getType()
+</script>
+||
+<script prefix="h-wxpay.pay" description="API:wxpay.pay">
+wxpay.pay({
+  prepayid: '${1:your order prepayid,eg: wx20170101abcdef1234567890}',
+  extra: {$2},
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel')
+  }
+})
+</script>

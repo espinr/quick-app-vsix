@@ -1,0 +1,28 @@
+<script prefix="h-network.getType" description="API:network.getType">
+network.getType({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-network.subscribe" description="API:network.subscribe">
+network.subscribe({
+  callback: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  }
+})
+</script>
+||
+<script prefix="h-network.unsubscribe" description="API:network.unsubscribe">
+network.unsubscribe()
+</script>

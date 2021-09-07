@@ -1,0 +1,5 @@
+<script prefix="h-webview.loadUrl" description="API:webview.loadUrl">
+webview.loadUrl({
+  url: '${1:http://www.example.com}'
+})
+</script>

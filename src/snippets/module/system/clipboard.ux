@@ -1,0 +1,28 @@
+<script prefix="h-clipboard.set" description="API:clipboard.set">
+clipboard.set({
+  text:'${1:text}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-clipboard.get" description="API:clipboard.get">
+clipboard.get({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

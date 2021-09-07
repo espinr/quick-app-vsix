@@ -1,0 +1,60 @@
+{
+  "name": "hap-en",
+  "displayName": "Hap Extension (English)",
+  "description": "Hap Extension (English version), based on the original Hap",
+  "version": "0.0.8",
+  "publisher": "hap",
+  "icon": "images/logo.png",
+  "main": "./dist/extension.js",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "hap",
+    "ux",
+    "mix"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "html",
+        "extensions": [
+          ".ux",
+          ".mix"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "css",
+        "path": "./dist/snippets/style.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./dist/snippets/module.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "devDependencies": {
+    "@types/node": "^7.0.43",
+    "cpy-cli": "^1.0.1",
+    "dot": "^1.1.2",
+    "hap-utils": "0.0.3",
+    "typescript": "^2.8.1",
+    "vscode": "^1.1.6",
+    "eslint": "^2.13.1",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "compile": "tsc -p ./src && cpy ./src/data/tag.json ./dist/data"
+  }
+}

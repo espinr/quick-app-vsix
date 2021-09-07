@@ -1,0 +1,3 @@
+<script prefix="h-app.getInfo" description="API:app.getInfo">
+({name, versionName, versionCode, logLevel, source} = app.getInfo())
+</script>

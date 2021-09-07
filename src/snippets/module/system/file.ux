@@ -1,0 +1,76 @@
+<script prefix="h-file.move" description="API:file.move">
+file.move({
+  srcUri: '${1:internal://cache/path/to/file}',
+  dstUri: '${2:internal://files/path/to/file}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-file.copy" description="API:file.copy">
+file.copy({
+  srcUri: '${1:internal://cache/path/to/file}',
+  dstUri: '${2:internal://files/path/to/file}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-file.list" description="API:file.list">
+file.list({
+  uri: '${1:internal://files/movies/}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-file.get" description="API:file.get">
+file.get({
+  uri: '${1:internal://files/path/to/file}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
+||
+<script prefix="h-file.delete" description="API:file.delete">
+file.delete({
+  uri: '${1:internal://files/path/to/file}',
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>

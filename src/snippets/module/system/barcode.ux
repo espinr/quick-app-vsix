@@ -1,0 +1,16 @@
+<script prefix="h-barcode.scan" description="API:barcode.scan">
+barcode.scan({
+  success: function (data) {
+    console.info('success');
+  },
+  fail: function (data, code) {
+    console.info('fail');
+  },
+  cancel: function () {
+    console.info('cancel');
+  },
+  complete: function () {
+    console.info('complete')
+  }
+})
+</script>
